@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Física</title>
+</head>
+<body>
+    <h1>Calculadora de Posición, Velocidad y Aceleración</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="funcion">Función de posición (en términos de x):</label>
+        <input type="text" id="funcion" name="funcion" placeholder="Ej: x**2 + 2*x + 1">
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
